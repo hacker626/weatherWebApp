@@ -9,7 +9,7 @@ app.get("/",function(request,response){
   response.sendFile(__dirname+"/index.html");
 
 });
-app.use("/",function(request,response){
+app.post("/",function(request,response){
   console.log(request.body.city2);
   var data1 = request.body.city1;
   var data2 = request.body.city2;
